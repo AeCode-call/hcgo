@@ -6,17 +6,17 @@ const fs = require('fs');
  * @param {cwd} cwd 需执行的命令
  */
 exports.runcwd = (cwd) => {
-  console.log(111111);
-  // const ls = spawn('npm', ['-v']);
-  // ls.stdout.on('data', (data) => {
-  //   console.log(`${data}`);
-  // });
-  // ls.stderr.on('data', (data) => {
-  //   console.error(`error: ${data}`);
-  // });
-  // ls.on('close', (code) => {
-  //   console.log(`child process exited with code ${code}`);
-  // });
+  // console.log(111111);
+  const ls = spawn('npm', ['-v']);
+  ls.stdout.on('data', (data) => {
+    console.log(`${data}`);
+  });
+  ls.stderr.on('data', (data) => {
+    console.error(`error: ${data}`);
+  });
+  ls.on('close', (code) => {
+    console.log(`child process exited with code ${code}`);
+  });
 };
 
 /**
