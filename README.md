@@ -26,7 +26,7 @@
 ##### 开发安装
 
 1. 获取本项目 `git clone xxx`
-2. 推荐使用 `pnpm i` 当然也可以使用 `yarn add` 或者 `npm i` 
+2. 推荐使用 `pnpm i` 当然也可以使用 `yarn` 或者 `npm i` 
 3. 进入项目执行 `npm link`
 4. 然后你就可以全局使用我们的工具试试 `hcgo -h`
 
