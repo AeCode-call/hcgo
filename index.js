@@ -30,11 +30,21 @@ program
 // 实施条件：需要项目经理配合获取小程序的代码上传密钥, 并打开白名单限制
 program
   .command('p')
-  .option('-p --path [path]', '选填, 如果你需要打包对应路径的二维码时可以使用该选项')
-  .option('-g --go','选填, 如果该值存在将会把代码发送到正式环境小程序')
+  .option('-p --path [path]', '选填, 如果你需要打包对应路径的二维码时可以使用该选项','publish')
   .description('publish 发布项目禁止指定环境')
   .action(function (cmd, options) {
     console.log('exec "%s" using %s mode', cmd, options.exec_mode);
+    if (cmd.path === true) {
+      // 发主页二维码
+      return;
+    }
+
+    if (cmd.path === 'publish') {
+      // 发体验版小程序
+      return;
+    }
+    // 发对应路径小程序二维码
+    
   });
 
 program.parse(process.argv);
