@@ -2,10 +2,12 @@ lockfileVersion: 5.4
 
 specifiers:
   commander: ^9.4.0
+  consola: ^2.15.3
   cross-spawn: ^7.0.3
 
 dependencies:
   commander: 9.4.0
+  consola: 2.15.3
   cross-spawn: 7.0.3
 
 packages:
@@ -13,6 +15,10 @@ packages:
   /commander/9.4.0:
     resolution: {integrity: sha512-sRPT+umqkz90UA8M1yqYfnHlZA7fF6nSphDtxeywPZ49ysjxDQybzk13CL+mXekDRG92skbcqCLVovuCusNmFw==}
     engines: {node: ^12.20.0 || >=14}
+    dev: false
+
+  /consola/2.15.3:
+    resolution: {integrity: sha512-9vAdYbHj6x2fLKC4+oPH0kFzY/orMZyG2Aj+kNylHxKGJ/Ed4dpNyAQYwJOdqO4zdM7XpVHmyejQDcQHrnuXbw==}
     dev: false
 
   /cross-spawn/7.0.3:

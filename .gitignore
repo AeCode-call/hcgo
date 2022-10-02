@@ -1,1 +1,3 @@
 node_modules/*
+# 该目录下存放小程序的key文件
+codekey/*
