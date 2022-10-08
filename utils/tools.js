@@ -13,7 +13,6 @@ const config = require('./config');
 exports.runcwd = (cwd, option = {}) => {
   const start = cwd.split(" ")
   const gocwd = start.slice(1)
-  console.log("statr", start, "gocwd", gocwd);
   const ls = spawn(start[0], gocwd, option);
   ls.stdout.on('data', (data) => {
     console.log(`${data}`);
